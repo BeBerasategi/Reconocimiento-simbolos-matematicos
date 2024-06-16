@@ -1,8 +1,0 @@
-numpy
-ipywidgets
-ipycanvas
-tensorflow
-scikit-learn
-opencv-python-headless
-voila
-
