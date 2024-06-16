@@ -1,0 +1,75 @@
+DESCRIPTION: CNN training, with data augmentation. Uses validation set. Model: CNN 4 layer
+Start time: 10:10:47
+
+Original data loaded
+Augmented data loaded
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (147600, 32, 32, 32)      320       
+                                                                 
+ max_pooling2d (MaxPooling2D  (147600, 16, 16, 32)     0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (147600, 16, 16, 64)      18496     
+                                                                 
+ max_pooling2d_1 (MaxPooling  (147600, 8, 8, 64)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_2 (Conv2D)           (147600, 8, 8, 128)       73856     
+                                                                 
+ max_pooling2d_2 (MaxPooling  (147600, 4, 4, 128)      0         
+ 2D)                                                             
+                                                                 
+ flatten (Flatten)           (147600, 2048)            0         
+                                                                 
+ dense (Dense)               (147600, 369)             756081    
+                                                                 
+=================================================================
+Total params: 848,753
+Trainable params: 848,753
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/20
+
+Epoch 1: val_accuracy improved from -inf to 0.72358, saving model to ./models_aug/best_model.h5
+4036/4036 - 729s - loss: 1.5208 - accuracy: 0.6169 - val_loss: 0.9598 - val_accuracy: 0.7236 - 729s/epoch - 181ms/step
+Epoch 2/20
+
+Epoch 2: val_accuracy improved from 0.72358 to 0.74726, saving model to ./models_aug/best_model.h5
+4036/4036 - 802s - loss: 0.7854 - accuracy: 0.7629 - val_loss: 0.8568 - val_accuracy: 0.7473 - 802s/epoch - 199ms/step
+Epoch 3/20
+
+Epoch 3: val_accuracy improved from 0.74726 to 0.75436, saving model to ./models_aug/best_model.h5
+4036/4036 - 809s - loss: 0.6058 - accuracy: 0.8049 - val_loss: 0.8226 - val_accuracy: 0.7544 - 809s/epoch - 200ms/step
+Epoch 4/20
+
+Epoch 4: val_accuracy improved from 0.75436 to 0.75599, saving model to ./models_aug/best_model.h5
+4036/4036 - 785s - loss: 0.4867 - accuracy: 0.8359 - val_loss: 0.8597 - val_accuracy: 0.7560 - 785s/epoch - 194ms/step
+Epoch 5/20
+
+Epoch 5: val_accuracy did not improve from 0.75599
+4036/4036 - 808s - loss: 0.3992 - accuracy: 0.8607 - val_loss: 0.8905 - val_accuracy: 0.7495 - 808s/epoch - 200ms/step
+Epoch 6/20
+
+Epoch 6: val_accuracy did not improve from 0.75599
+4036/4036 - 784s - loss: 0.3311 - accuracy: 0.8822 - val_loss: 0.9632 - val_accuracy: 0.7514 - 784s/epoch - 194ms/step
+Epoch 7/20
+
+Epoch 7: val_accuracy did not improve from 0.75599
+4036/4036 - 797s - loss: 0.2798 - accuracy: 0.8978 - val_loss: 1.0439 - val_accuracy: 0.7448 - 797s/epoch - 198ms/step
+The model has been trained.
+1052/1052 - 54s - 54s/epoch - 51ms/step
+Statistics computed. Program finished-----------------
+
+End time: 11:45:19
+
+Execution time: 01:34:31
+Data saved
+

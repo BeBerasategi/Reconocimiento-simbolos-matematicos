@@ -1,0 +1,3 @@
+DESCRIPTION: Support Vector Machine training, with cross validation to obtain more robust statistics.
+Start time: 12:18:04
+

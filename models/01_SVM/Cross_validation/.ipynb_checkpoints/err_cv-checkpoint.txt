@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "SVM_cross_validation.py", line 49, in <module>
+    y_proba = svm.predict_proba(X_test)
+AttributeError: 'LinearSVC' object has no attribute 'predict_proba'

@@ -1,0 +1,125 @@
+DESCRIPTION: CNN training, with data augmentation. Validation is used. Augmented dataset (600). Model: MNIST from the book "Hands on Machine Learning" (Géron).
+Start time: 10:13:26
+
+Original data loaded
+Augmented data loaded
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (369000, 32, 32, 32)      320       
+                                                                 
+ conv2d_1 (Conv2D)           (369000, 32, 32, 64)      18496     
+                                                                 
+ max_pooling2d (MaxPooling2D  (369000, 16, 16, 64)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (369000, 16384)           0         
+                                                                 
+ dropout (Dropout)           (369000, 16384)           0         
+                                                                 
+ dense (Dense)               (369000, 128)             2097280   
+                                                                 
+ dropout_1 (Dropout)         (369000, 128)             0         
+                                                                 
+ dense_1 (Dense)             (369000, 369)             47601     
+                                                                 
+=================================================================
+Total params: 2,163,697
+Trainable params: 2,163,697
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/20
+
+Epoch 1: val_accuracy improved from -inf to 0.69130, saving model to ./models_aug/best_model.h5
+11532/11532 - 4397s - loss: 2.3978 - accuracy: 0.4151 - val_loss: 1.1216 - val_accuracy: 0.6913 - 4397s/epoch - 381ms/step
+Epoch 2/20
+
+Epoch 2: val_accuracy improved from 0.69130 to 0.72108, saving model to ./models_aug/best_model.h5
+11532/11532 - 3856s - loss: 1.6706 - accuracy: 0.5495 - val_loss: 0.9506 - val_accuracy: 0.7211 - 3856s/epoch - 334ms/step
+Epoch 3/20
+
+Epoch 3: val_accuracy improved from 0.72108 to 0.74289, saving model to ./models_aug/best_model.h5
+11532/11532 - 4050s - loss: 1.4972 - accuracy: 0.5851 - val_loss: 0.8652 - val_accuracy: 0.7429 - 4050s/epoch - 351ms/step
+Epoch 4/20
+
+Epoch 4: val_accuracy improved from 0.74289 to 0.75937, saving model to ./models_aug/best_model.h5
+11532/11532 - 3774s - loss: 1.4012 - accuracy: 0.6067 - val_loss: 0.8126 - val_accuracy: 0.7594 - 3774s/epoch - 327ms/step
+Epoch 5/20
+
+Epoch 5: val_accuracy improved from 0.75937 to 0.76650, saving model to ./models_aug/best_model.h5
+11532/11532 - 3102s - loss: 1.3428 - accuracy: 0.6194 - val_loss: 0.7672 - val_accuracy: 0.7665 - 3102s/epoch - 269ms/step
+Epoch 6/20
+
+Epoch 6: val_accuracy improved from 0.76650 to 0.77383, saving model to ./models_aug/best_model.h5
+11532/11532 - 3086s - loss: 1.2958 - accuracy: 0.6291 - val_loss: 0.7282 - val_accuracy: 0.7738 - 3086s/epoch - 268ms/step
+Epoch 7/20
+
+Epoch 7: val_accuracy improved from 0.77383 to 0.77791, saving model to ./models_aug/best_model.h5
+11532/11532 - 3105s - loss: 1.2604 - accuracy: 0.6384 - val_loss: 0.7174 - val_accuracy: 0.7779 - 3105s/epoch - 269ms/step
+Epoch 8/20
+
+Epoch 8: val_accuracy improved from 0.77791 to 0.78456, saving model to ./models_aug/best_model.h5
+11532/11532 - 2048s - loss: 1.2347 - accuracy: 0.6432 - val_loss: 0.6865 - val_accuracy: 0.7846 - 2048s/epoch - 178ms/step
+Epoch 9/20
+
+Epoch 9: val_accuracy improved from 0.78456 to 0.78801, saving model to ./models_aug/best_model.h5
+11532/11532 - 2174s - loss: 1.2154 - accuracy: 0.6481 - val_loss: 0.6722 - val_accuracy: 0.7880 - 2174s/epoch - 188ms/step
+Epoch 10/20
+
+Epoch 10: val_accuracy improved from 0.78801 to 0.78888, saving model to ./models_aug/best_model.h5
+11532/11532 - 2345s - loss: 1.1962 - accuracy: 0.6527 - val_loss: 0.6831 - val_accuracy: 0.7889 - 2345s/epoch - 203ms/step
+Epoch 11/20
+
+Epoch 11: val_accuracy improved from 0.78888 to 0.79796, saving model to ./models_aug/best_model.h5
+11532/11532 - 1741s - loss: 1.1802 - accuracy: 0.6556 - val_loss: 0.6323 - val_accuracy: 0.7980 - 1741s/epoch - 151ms/step
+Epoch 12/20
+
+Epoch 12: val_accuracy did not improve from 0.79796
+11532/11532 - 1336s - loss: 1.1707 - accuracy: 0.6593 - val_loss: 0.6371 - val_accuracy: 0.7977 - 1336s/epoch - 116ms/step
+Epoch 13/20
+
+Epoch 13: val_accuracy improved from 0.79796 to 0.80319, saving model to ./models_aug/best_model.h5
+11532/11532 - 1340s - loss: 1.1575 - accuracy: 0.6611 - val_loss: 0.6232 - val_accuracy: 0.8032 - 1340s/epoch - 116ms/step
+Epoch 14/20
+
+Epoch 14: val_accuracy improved from 0.80319 to 0.80494, saving model to ./models_aug/best_model.h5
+11532/11532 - 1335s - loss: 1.1514 - accuracy: 0.6632 - val_loss: 0.6153 - val_accuracy: 0.8049 - 1335s/epoch - 116ms/step
+Epoch 15/20
+
+Epoch 15: val_accuracy did not improve from 0.80494
+11532/11532 - 2529s - loss: 1.1480 - accuracy: 0.6642 - val_loss: 0.6151 - val_accuracy: 0.8033 - 2529s/epoch - 219ms/step
+Epoch 16/20
+
+Epoch 16: val_accuracy improved from 0.80494 to 0.80930, saving model to ./models_aug/best_model.h5
+11532/11532 - 3187s - loss: 1.1393 - accuracy: 0.6658 - val_loss: 0.6004 - val_accuracy: 0.8093 - 3187s/epoch - 276ms/step
+Epoch 17/20
+
+Epoch 17: val_accuracy did not improve from 0.80930
+11532/11532 - 3196s - loss: 1.1338 - accuracy: 0.6680 - val_loss: 0.5930 - val_accuracy: 0.8072 - 3196s/epoch - 277ms/step
+Epoch 18/20
+
+Epoch 18: val_accuracy improved from 0.80930 to 0.80943, saving model to ./models_aug/best_model.h5
+11532/11532 - 3093s - loss: 1.1328 - accuracy: 0.6686 - val_loss: 0.6011 - val_accuracy: 0.8094 - 3093s/epoch - 268ms/step
+Epoch 19/20
+
+Epoch 19: val_accuracy did not improve from 0.80943
+11532/11532 - 2927s - loss: 1.1268 - accuracy: 0.6680 - val_loss: 0.5999 - val_accuracy: 0.8064 - 2927s/epoch - 254ms/step
+Epoch 20/20
+
+Epoch 20: val_accuracy did not improve from 0.80943
+11532/11532 - 2952s - loss: 1.1907 - accuracy: 0.6586 - val_loss: 0.6137 - val_accuracy: 0.8058 - 2952s/epoch - 256ms/step
+The model has been trained.
+1052/1052 - 54s - 54s/epoch - 52ms/step
+Statistics computed. Program finished-----------------
+
+End time: 01:44:01
+
+Execution time: 15:30:34
+Data saved
+

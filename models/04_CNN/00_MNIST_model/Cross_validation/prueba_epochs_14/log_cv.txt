@@ -1,0 +1,484 @@
+DESCRIPTION: CNN training, with cross validation to obtain more robust statistics. Model: MNIST from the book "Hands on Machine Learning" (Géron).
+Start time: 21:30:00
+
+Fold 1 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107668, 32, 32, 32)      320       
+                                                                 
+ conv2d_1 (Conv2D)           (107668, 32, 32, 64)      18496     
+                                                                 
+ max_pooling2d (MaxPooling2D  (107668, 16, 16, 64)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107668, 16384)           0         
+                                                                 
+ dropout (Dropout)           (107668, 16384)           0         
+                                                                 
+ dense (Dense)               (107668, 128)             2097280   
+                                                                 
+ dropout_1 (Dropout)         (107668, 128)             0         
+                                                                 
+ dense_1 (Dense)             (107668, 369)             47601     
+                                                                 
+=================================================================
+Total params: 2,163,697
+Trainable params: 2,163,697
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/14
+
+Epoch 1: loss improved from inf to 2.53446, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 324s - loss: 2.5345 - accuracy: 0.4478 - 324s/epoch - 96ms/step
+Epoch 2/14
+
+Epoch 2: loss improved from 2.53446 to 1.53664, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 328s - loss: 1.5366 - accuracy: 0.6055 - 328s/epoch - 97ms/step
+Epoch 3/14
+
+Epoch 3: loss improved from 1.53664 to 1.30671, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 347s - loss: 1.3067 - accuracy: 0.6522 - 347s/epoch - 103ms/step
+Epoch 4/14
+
+Epoch 4: loss improved from 1.30671 to 1.16140, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 356s - loss: 1.1614 - accuracy: 0.6811 - 356s/epoch - 106ms/step
+Epoch 5/14
+
+Epoch 5: loss improved from 1.16140 to 1.05978, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 360s - loss: 1.0598 - accuracy: 0.7029 - 360s/epoch - 107ms/step
+Epoch 6/14
+
+Epoch 6: loss improved from 1.05978 to 0.98336, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 356s - loss: 0.9834 - accuracy: 0.7183 - 356s/epoch - 106ms/step
+Epoch 7/14
+
+Epoch 7: loss improved from 0.98336 to 0.92581, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 361s - loss: 0.9258 - accuracy: 0.7303 - 361s/epoch - 107ms/step
+Epoch 8/14
+
+Epoch 8: loss improved from 0.92581 to 0.87494, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 360s - loss: 0.8749 - accuracy: 0.7403 - 360s/epoch - 107ms/step
+Epoch 9/14
+
+Epoch 9: loss improved from 0.87494 to 0.83370, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 366s - loss: 0.8337 - accuracy: 0.7498 - 366s/epoch - 109ms/step
+Epoch 10/14
+
+Epoch 10: loss improved from 0.83370 to 0.80223, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 361s - loss: 0.8022 - accuracy: 0.7552 - 361s/epoch - 107ms/step
+Epoch 11/14
+
+Epoch 11: loss improved from 0.80223 to 0.76688, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 357s - loss: 0.7669 - accuracy: 0.7647 - 357s/epoch - 106ms/step
+Epoch 12/14
+
+Epoch 12: loss improved from 0.76688 to 0.73353, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 356s - loss: 0.7335 - accuracy: 0.7713 - 356s/epoch - 106ms/step
+Epoch 13/14
+
+Epoch 13: loss improved from 0.73353 to 0.71375, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 358s - loss: 0.7138 - accuracy: 0.7756 - 358s/epoch - 106ms/step
+Epoch 14/14
+
+Epoch 14: loss improved from 0.71375 to 0.68956, saving model to ./models_cv/best_model_fold_1.h5
+3365/3365 - 360s - loss: 0.6896 - accuracy: 0.7823 - 360s/epoch - 107ms/step
+The model has been trained.
+842/842 - 15s - 15s/epoch - 18ms/step
+Fold 1 TOP1 accuracy: 0.8042945241102608
+Fold 1 MER accuracy: 0.8901850063154766
+
+Fold 2 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107669, 32, 32, 32)      320       
+                                                                 
+ conv2d_1 (Conv2D)           (107669, 32, 32, 64)      18496     
+                                                                 
+ max_pooling2d (MaxPooling2D  (107669, 16, 16, 64)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107669, 16384)           0         
+                                                                 
+ dropout (Dropout)           (107669, 16384)           0         
+                                                                 
+ dense (Dense)               (107669, 128)             2097280   
+                                                                 
+ dropout_1 (Dropout)         (107669, 128)             0         
+                                                                 
+ dense_1 (Dense)             (107669, 369)             47601     
+                                                                 
+=================================================================
+Total params: 2,163,697
+Trainable params: 2,163,697
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/14
+
+Epoch 1: loss improved from inf to 2.60754, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 327s - loss: 2.6075 - accuracy: 0.4349 - 327s/epoch - 97ms/step
+Epoch 2/14
+
+Epoch 2: loss improved from 2.60754 to 1.58814, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 327s - loss: 1.5881 - accuracy: 0.5960 - 327s/epoch - 97ms/step
+Epoch 3/14
+
+Epoch 3: loss improved from 1.58814 to 1.35758, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 339s - loss: 1.3576 - accuracy: 0.6428 - 339s/epoch - 101ms/step
+Epoch 4/14
+
+Epoch 4: loss improved from 1.35758 to 1.20743, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 342s - loss: 1.2074 - accuracy: 0.6710 - 342s/epoch - 102ms/step
+Epoch 5/14
+
+Epoch 5: loss improved from 1.20743 to 1.09153, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 339s - loss: 1.0915 - accuracy: 0.6972 - 339s/epoch - 101ms/step
+Epoch 6/14
+
+Epoch 6: loss improved from 1.09153 to 1.00703, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 339s - loss: 1.0070 - accuracy: 0.7134 - 339s/epoch - 101ms/step
+Epoch 7/14
+
+Epoch 7: loss improved from 1.00703 to 0.95021, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 338s - loss: 0.9502 - accuracy: 0.7262 - 338s/epoch - 100ms/step
+Epoch 8/14
+
+Epoch 8: loss improved from 0.95021 to 0.89495, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 357s - loss: 0.8949 - accuracy: 0.7372 - 357s/epoch - 106ms/step
+Epoch 9/14
+
+Epoch 9: loss improved from 0.89495 to 0.85466, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 345s - loss: 0.8547 - accuracy: 0.7457 - 345s/epoch - 103ms/step
+Epoch 10/14
+
+Epoch 10: loss improved from 0.85466 to 0.81806, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 351s - loss: 0.8181 - accuracy: 0.7540 - 351s/epoch - 104ms/step
+Epoch 11/14
+
+Epoch 11: loss improved from 0.81806 to 0.78188, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 346s - loss: 0.7819 - accuracy: 0.7623 - 346s/epoch - 103ms/step
+Epoch 12/14
+
+Epoch 12: loss improved from 0.78188 to 0.74954, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 354s - loss: 0.7495 - accuracy: 0.7688 - 354s/epoch - 105ms/step
+Epoch 13/14
+
+Epoch 13: loss improved from 0.74954 to 0.72875, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 353s - loss: 0.7287 - accuracy: 0.7747 - 353s/epoch - 105ms/step
+Epoch 14/14
+
+Epoch 14: loss improved from 0.72875 to 0.70759, saving model to ./models_cv/best_model_fold_2.h5
+3365/3365 - 354s - loss: 0.7076 - accuracy: 0.7788 - 354s/epoch - 105ms/step
+The model has been trained.
+842/842 - 15s - 15s/epoch - 17ms/step
+Fold 2 TOP1 accuracy: 0.7994947430991567
+Fold 2 MER accuracy: 0.8866887097373407
+
+Fold 3 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107669, 32, 32, 32)      320       
+                                                                 
+ conv2d_1 (Conv2D)           (107669, 32, 32, 64)      18496     
+                                                                 
+ max_pooling2d (MaxPooling2D  (107669, 16, 16, 64)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107669, 16384)           0         
+                                                                 
+ dropout (Dropout)           (107669, 16384)           0         
+                                                                 
+ dense (Dense)               (107669, 128)             2097280   
+                                                                 
+ dropout_1 (Dropout)         (107669, 128)             0         
+                                                                 
+ dense_1 (Dense)             (107669, 369)             47601     
+                                                                 
+=================================================================
+Total params: 2,163,697
+Trainable params: 2,163,697
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/14
+
+Epoch 1: loss improved from inf to 2.55704, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 329s - loss: 2.5570 - accuracy: 0.4438 - 329s/epoch - 98ms/step
+Epoch 2/14
+
+Epoch 2: loss improved from 2.55704 to 1.54151, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 334s - loss: 1.5415 - accuracy: 0.6061 - 334s/epoch - 99ms/step
+Epoch 3/14
+
+Epoch 3: loss improved from 1.54151 to 1.31452, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 347s - loss: 1.3145 - accuracy: 0.6497 - 347s/epoch - 103ms/step
+Epoch 4/14
+
+Epoch 4: loss improved from 1.31452 to 1.16892, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 354s - loss: 1.1689 - accuracy: 0.6798 - 354s/epoch - 105ms/step
+Epoch 5/14
+
+Epoch 5: loss improved from 1.16892 to 1.06134, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 361s - loss: 1.0613 - accuracy: 0.7026 - 361s/epoch - 107ms/step
+Epoch 6/14
+
+Epoch 6: loss improved from 1.06134 to 0.97434, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 356s - loss: 0.9743 - accuracy: 0.7207 - 356s/epoch - 106ms/step
+Epoch 7/14
+
+Epoch 7: loss improved from 0.97434 to 0.91766, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 360s - loss: 0.9177 - accuracy: 0.7340 - 360s/epoch - 107ms/step
+Epoch 8/14
+
+Epoch 8: loss improved from 0.91766 to 0.86035, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 353s - loss: 0.8603 - accuracy: 0.7449 - 353s/epoch - 105ms/step
+Epoch 9/14
+
+Epoch 9: loss improved from 0.86035 to 0.81517, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 339s - loss: 0.8152 - accuracy: 0.7552 - 339s/epoch - 101ms/step
+Epoch 10/14
+
+Epoch 10: loss improved from 0.81517 to 0.77959, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 343s - loss: 0.7796 - accuracy: 0.7634 - 343s/epoch - 102ms/step
+Epoch 11/14
+
+Epoch 11: loss improved from 0.77959 to 0.74516, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 355s - loss: 0.7452 - accuracy: 0.7700 - 355s/epoch - 106ms/step
+Epoch 12/14
+
+Epoch 12: loss improved from 0.74516 to 0.71622, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 349s - loss: 0.7162 - accuracy: 0.7761 - 349s/epoch - 104ms/step
+Epoch 13/14
+
+Epoch 13: loss improved from 0.71622 to 0.68491, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 341s - loss: 0.6849 - accuracy: 0.7825 - 341s/epoch - 101ms/step
+Epoch 14/14
+
+Epoch 14: loss improved from 0.68491 to 0.66586, saving model to ./models_cv/best_model_fold_3.h5
+3365/3365 - 352s - loss: 0.6659 - accuracy: 0.7882 - 352s/epoch - 105ms/step
+The model has been trained.
+842/842 - 15s - 15s/epoch - 18ms/step
+Fold 3 TOP1 accuracy: 0.8050302782628079
+Fold 3 MER accuracy: 0.888471969387376
+
+Fold 4 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107669, 32, 32, 32)      320       
+                                                                 
+ conv2d_1 (Conv2D)           (107669, 32, 32, 64)      18496     
+                                                                 
+ max_pooling2d (MaxPooling2D  (107669, 16, 16, 64)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107669, 16384)           0         
+                                                                 
+ dropout (Dropout)           (107669, 16384)           0         
+                                                                 
+ dense (Dense)               (107669, 128)             2097280   
+                                                                 
+ dropout_1 (Dropout)         (107669, 128)             0         
+                                                                 
+ dense_1 (Dense)             (107669, 369)             47601     
+                                                                 
+=================================================================
+Total params: 2,163,697
+Trainable params: 2,163,697
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/14
+
+Epoch 1: loss improved from inf to 2.59434, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 323s - loss: 2.5943 - accuracy: 0.4409 - 323s/epoch - 96ms/step
+Epoch 2/14
+
+Epoch 2: loss improved from 2.59434 to 1.59460, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 333s - loss: 1.5946 - accuracy: 0.5970 - 333s/epoch - 99ms/step
+Epoch 3/14
+
+Epoch 3: loss improved from 1.59460 to 1.34609, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 343s - loss: 1.3461 - accuracy: 0.6437 - 343s/epoch - 102ms/step
+Epoch 4/14
+
+Epoch 4: loss improved from 1.34609 to 1.20396, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 339s - loss: 1.2040 - accuracy: 0.6725 - 339s/epoch - 101ms/step
+Epoch 5/14
+
+Epoch 5: loss improved from 1.20396 to 1.09351, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 336s - loss: 1.0935 - accuracy: 0.6975 - 336s/epoch - 100ms/step
+Epoch 6/14
+
+Epoch 6: loss improved from 1.09351 to 1.01449, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 349s - loss: 1.0145 - accuracy: 0.7123 - 349s/epoch - 104ms/step
+Epoch 7/14
+
+Epoch 7: loss improved from 1.01449 to 0.94350, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 347s - loss: 0.9435 - accuracy: 0.7271 - 347s/epoch - 103ms/step
+Epoch 8/14
+
+Epoch 8: loss improved from 0.94350 to 0.89155, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 346s - loss: 0.8915 - accuracy: 0.7381 - 346s/epoch - 103ms/step
+Epoch 9/14
+
+Epoch 9: loss improved from 0.89155 to 0.83761, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 342s - loss: 0.8376 - accuracy: 0.7507 - 342s/epoch - 101ms/step
+Epoch 10/14
+
+Epoch 10: loss improved from 0.83761 to 0.79467, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 340s - loss: 0.7947 - accuracy: 0.7587 - 340s/epoch - 101ms/step
+Epoch 11/14
+
+Epoch 11: loss improved from 0.79467 to 0.76515, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 342s - loss: 0.7651 - accuracy: 0.7650 - 342s/epoch - 102ms/step
+Epoch 12/14
+
+Epoch 12: loss improved from 0.76515 to 0.73075, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 314s - loss: 0.7308 - accuracy: 0.7729 - 314s/epoch - 93ms/step
+Epoch 13/14
+
+Epoch 13: loss improved from 0.73075 to 0.69846, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 326s - loss: 0.6985 - accuracy: 0.7809 - 326s/epoch - 97ms/step
+Epoch 14/14
+
+Epoch 14: loss improved from 0.69846 to 0.67800, saving model to ./models_cv/best_model_fold_4.h5
+3365/3365 - 329s - loss: 0.6780 - accuracy: 0.7850 - 329s/epoch - 98ms/step
+The model has been trained.
+842/842 - 15s - 15s/epoch - 17ms/step
+Fold 4 TOP1 accuracy: 0.8020581788460824
+Fold 4 MER accuracy: 0.8872459783779767
+
+Fold 5 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107669, 32, 32, 32)      320       
+                                                                 
+ conv2d_1 (Conv2D)           (107669, 32, 32, 64)      18496     
+                                                                 
+ max_pooling2d (MaxPooling2D  (107669, 16, 16, 64)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107669, 16384)           0         
+                                                                 
+ dropout (Dropout)           (107669, 16384)           0         
+                                                                 
+ dense (Dense)               (107669, 128)             2097280   
+                                                                 
+ dropout_1 (Dropout)         (107669, 128)             0         
+                                                                 
+ dense_1 (Dense)             (107669, 369)             47601     
+                                                                 
+=================================================================
+Total params: 2,163,697
+Trainable params: 2,163,697
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/14
+
+Epoch 1: loss improved from inf to 2.61889, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 326s - loss: 2.6189 - accuracy: 0.4345 - 326s/epoch - 97ms/step
+Epoch 2/14
+
+Epoch 2: loss improved from 2.61889 to 1.56878, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 328s - loss: 1.5688 - accuracy: 0.5998 - 328s/epoch - 97ms/step
+Epoch 3/14
+
+Epoch 3: loss improved from 1.56878 to 1.32443, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 350s - loss: 1.3244 - accuracy: 0.6492 - 350s/epoch - 104ms/step
+Epoch 4/14
+
+Epoch 4: loss improved from 1.32443 to 1.17150, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 322s - loss: 1.1715 - accuracy: 0.6814 - 322s/epoch - 96ms/step
+Epoch 5/14
+
+Epoch 5: loss improved from 1.17150 to 1.07097, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 348s - loss: 1.0710 - accuracy: 0.7006 - 348s/epoch - 103ms/step
+Epoch 6/14
+
+Epoch 6: loss improved from 1.07097 to 0.99434, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 338s - loss: 0.9943 - accuracy: 0.7177 - 338s/epoch - 101ms/step
+Epoch 7/14
+
+Epoch 7: loss improved from 0.99434 to 0.93868, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 346s - loss: 0.9387 - accuracy: 0.7277 - 346s/epoch - 103ms/step
+Epoch 8/14
+
+Epoch 8: loss improved from 0.93868 to 0.88824, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 346s - loss: 0.8882 - accuracy: 0.7387 - 346s/epoch - 103ms/step
+Epoch 9/14
+
+Epoch 9: loss improved from 0.88824 to 0.84049, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 328s - loss: 0.8405 - accuracy: 0.7491 - 328s/epoch - 97ms/step
+Epoch 10/14
+
+Epoch 10: loss improved from 0.84049 to 0.80138, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 339s - loss: 0.8014 - accuracy: 0.7569 - 339s/epoch - 101ms/step
+Epoch 11/14
+
+Epoch 11: loss improved from 0.80138 to 0.77038, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 336s - loss: 0.7704 - accuracy: 0.7632 - 336s/epoch - 100ms/step
+Epoch 12/14
+
+Epoch 12: loss improved from 0.77038 to 0.73864, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 329s - loss: 0.7386 - accuracy: 0.7722 - 329s/epoch - 98ms/step
+Epoch 13/14
+
+Epoch 13: loss improved from 0.73864 to 0.71699, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 327s - loss: 0.7170 - accuracy: 0.7756 - 327s/epoch - 97ms/step
+Epoch 14/14
+
+Epoch 14: loss improved from 0.71699 to 0.69546, saving model to ./models_cv/best_model_fold_5.h5
+3365/3365 - 313s - loss: 0.6955 - accuracy: 0.7806 - 313s/epoch - 93ms/step
+The model has been trained.
+842/842 - 15s - 15s/epoch - 17ms/step
+Fold 5 TOP1 accuracy: 0.8054760931753168
+Fold 5 MER accuracy: 0.8894379016978118
+
+Cross validation finished-----------------
+
+End time: 04:14:41
+
+Execution time: 06:44:40
+Data saved
+
+Top1 accuracy mean: 0.8032707634987248
+Top1 accuracy std: 0.002486772435054856
+Top3 accuracy mean: 0.9462202579893921
+Top3 accuracy std: 0.0018443476148422553
+Top5 accuracy mean: 0.9662223460112388
+Top5 accuracy std: 0.0016122927709734034
+MER mean: 0.8884059131031963
+MER std: 0.0014602031122890003
+End of the script

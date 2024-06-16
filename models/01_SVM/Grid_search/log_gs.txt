@@ -1,0 +1,25 @@
+DESCRIPTION: linear svm training, with grid search for C.
+Start time: 18:22:48
+
+Data loaded
+Converted y indexes to symbol IDs
+Data scaled
+
+Grid search started-----------------
+c=1e-05
+c=0.0001
+c=0.001
+c=0.01
+c=0.1
+c=1
+Grid search finished-----------------
+
+End time: 05:26:36
+
+Execution time: 11:03:47
+Plot made and saved
+Saving data...
+Data saved
+
+Best value for C:  0.01
+Best model: ./models_gs/SVM_HASY_linear_C_0.01.joblib

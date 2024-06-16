@@ -1,0 +1,2 @@
+Por un error en el entrenamiento se ha utilizado el propio conjunto de training como conjunto de validación.
+Por lo tanto no es correcto... Pero de todas formas el resultado es bueno, puede que esta sea la mejor opción.

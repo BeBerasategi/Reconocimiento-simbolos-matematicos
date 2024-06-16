@@ -1,0 +1,111 @@
+DESCRIPTION: CNN training, with data augmentation. 14 epochs, on all the dataset. Model: MNIST from the book "Hands on Machine Learning" (Géron).
+Start time: 22:08:37
+
+Original data loaded
+Augmented data loaded
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (147600, 32, 32, 32)      320       
+                                                                 
+ max_pooling2d (MaxPooling2D  (147600, 16, 16, 32)     0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (147600, 16, 16, 64)      18496     
+                                                                 
+ max_pooling2d_1 (MaxPooling  (147600, 8, 8, 64)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_2 (Conv2D)           (147600, 8, 8, 128)       73856     
+                                                                 
+ max_pooling2d_2 (MaxPooling  (147600, 4, 4, 128)      0         
+ 2D)                                                             
+                                                                 
+ flatten (Flatten)           (147600, 2048)            0         
+                                                                 
+ dense (Dense)               (147600, 369)             756081    
+                                                                 
+=================================================================
+Total params: 848,753
+Trainable params: 848,753
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/14
+
+Epoch 1: loss improved from inf to 1.41991, saving model to ./models_aug/best_model.h5
+4613/4613 - 397s - loss: 1.4199 - accuracy: 0.6363 - 397s/epoch - 86ms/step
+Epoch 2/14
+
+Epoch 2: loss improved from 1.41991 to 0.75126, saving model to ./models_aug/best_model.h5
+4613/4613 - 407s - loss: 0.7513 - accuracy: 0.7693 - 407s/epoch - 88ms/step
+Epoch 3/14
+
+Epoch 3: loss improved from 0.75126 to 0.58011, saving model to ./models_aug/best_model.h5
+4613/4613 - 412s - loss: 0.5801 - accuracy: 0.8115 - 412s/epoch - 89ms/step
+Epoch 4/14
+
+Epoch 4: loss improved from 0.58011 to 0.46923, saving model to ./models_aug/best_model.h5
+4613/4613 - 384s - loss: 0.4692 - accuracy: 0.8394 - 384s/epoch - 83ms/step
+Epoch 5/14
+
+Epoch 5: loss improved from 0.46923 to 0.38247, saving model to ./models_aug/best_model.h5
+4613/4613 - 376s - loss: 0.3825 - accuracy: 0.8656 - 376s/epoch - 81ms/step
+Epoch 6/14
+
+Epoch 6: loss improved from 0.38247 to 0.31872, saving model to ./models_aug/best_model.h5
+4613/4613 - 407s - loss: 0.3187 - accuracy: 0.8859 - 407s/epoch - 88ms/step
+Epoch 7/14
+
+Epoch 7: loss improved from 0.31872 to 0.27038, saving model to ./models_aug/best_model.h5
+4613/4613 - 444s - loss: 0.2704 - accuracy: 0.8999 - 444s/epoch - 96ms/step
+Epoch 8/14
+
+Epoch 8: loss improved from 0.27038 to 0.23201, saving model to ./models_aug/best_model.h5
+4613/4613 - 444s - loss: 0.2320 - accuracy: 0.9132 - 444s/epoch - 96ms/step
+Epoch 9/14
+
+Epoch 9: loss improved from 0.23201 to 0.20037, saving model to ./models_aug/best_model.h5
+4613/4613 - 414s - loss: 0.2004 - accuracy: 0.9250 - 414s/epoch - 90ms/step
+Epoch 10/14
+
+Epoch 10: loss improved from 0.20037 to 0.17633, saving model to ./models_aug/best_model.h5
+4613/4613 - 405s - loss: 0.1763 - accuracy: 0.9336 - 405s/epoch - 88ms/step
+Epoch 11/14
+
+Epoch 11: loss improved from 0.17633 to 0.15671, saving model to ./models_aug/best_model.h5
+4613/4613 - 422s - loss: 0.1567 - accuracy: 0.9414 - 422s/epoch - 91ms/step
+Epoch 12/14
+
+Epoch 12: loss improved from 0.15671 to 0.13783, saving model to ./models_aug/best_model.h5
+4613/4613 - 424s - loss: 0.1378 - accuracy: 0.9486 - 424s/epoch - 92ms/step
+Epoch 13/14
+
+Epoch 13: loss improved from 0.13783 to 0.12649, saving model to ./models_aug/best_model.h5
+4613/4613 - 420s - loss: 0.1265 - accuracy: 0.9528 - 420s/epoch - 91ms/step
+Epoch 14/14
+
+Epoch 14: loss improved from 0.12649 to 0.11563, saving model to ./models_aug/best_model.h5
+4613/4613 - 408s - loss: 0.1156 - accuracy: 0.9567 - 408s/epoch - 88ms/step
+The model has been trained.
+1052/1052 - 25s - 25s/epoch - 24ms/step
+Statistics computed. Program finished-----------------
+
+End time: 23:45:57
+
+Execution time: 01:37:20
+Data saved
+
+Top1 accuracy: 0    0.757839
+Name: 1, dtype: float64
+Top3 accuracy: 0    0.93518
+Name: 3, dtype: float64
+Top5 accuracy: 0    0.962344
+Name: 5, dtype: float64
+MER mean: 0.8757392932505127
+End of the script

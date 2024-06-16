@@ -1,0 +1,63 @@
+DESCRIPTION: Random Forest training, with grid search for depth.
+Start time: 17:19:19
+
+Data loaded
+Converted y indexes to symbol IDs
+Grid search started-----------------
+depth=5
+depth=10
+depth=15
+depth=20
+depth=25
+depth=30
+depth=35
+depth=40
+depth=45
+depth=50
+depth=55
+Grid search finished-----------------
+
+End time: 17:55:23
+
+Execution time: 00:36:04
+Plot made and saved
+Saving data...
+Data saved
+
+Best value for depth:  45
+Best model: ./models_gs/RF_HASY_depth_55.joblib
+
+----------------------------------------------------------------------------------
+
+DESCRIPTION: Random Forest training, with grid search for number of estimators.
+Best depth from previous grid search is used.
+Start time: 17:55:24
+
+Grid search started-----------------
+estimator=10
+estimator=20
+estimator=30
+estimator=40
+estimator=50
+estimator=60
+estimator=70
+estimator=80
+estimator=90
+estimator=100
+estimator=110
+estimator=120
+estimator=130
+estimator=140
+estimator=150
+Grid search finished-----------------
+
+End time: 18:58:12
+
+Execution time: 01:02:47
+Plot made and saved
+Saving data...
+Data saved
+
+Best value for n_estimators:  150
+Best model: ./models_gs/RF_HASY_estimators_150.joblib
+

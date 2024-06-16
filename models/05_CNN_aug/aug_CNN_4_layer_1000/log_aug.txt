@@ -1,0 +1,88 @@
+DESCRIPTION: CNN training, with data augmentation. Uses validation set. Model: CNN 4 layer
+Start time: 08:32:19
+
+Original data loaded
+Augmented data loaded
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (369000, 32, 32, 32)      320       
+                                                                 
+ max_pooling2d (MaxPooling2D  (369000, 16, 16, 32)     0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (369000, 16, 16, 64)      18496     
+                                                                 
+ max_pooling2d_1 (MaxPooling  (369000, 8, 8, 64)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_2 (Conv2D)           (369000, 8, 8, 128)       73856     
+                                                                 
+ max_pooling2d_2 (MaxPooling  (369000, 4, 4, 128)      0         
+ 2D)                                                             
+                                                                 
+ flatten (Flatten)           (369000, 2048)            0         
+                                                                 
+ dense (Dense)               (369000, 369)             756081    
+                                                                 
+=================================================================
+Total params: 848,753
+Trainable params: 848,753
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/50
+
+Epoch 1: val_accuracy improved from -inf to 0.74485, saving model to ./models_aug/best_model.h5
+10090/10090 - 908s - loss: 1.2211 - accuracy: 0.6702 - val_loss: 0.8497 - val_accuracy: 0.7448 - 908s/epoch - 90ms/step
+Epoch 2/50
+
+Epoch 2: val_accuracy improved from 0.74485 to 0.76059, saving model to ./models_aug/best_model.h5
+10090/10090 - 964s - loss: 0.7312 - accuracy: 0.7709 - val_loss: 0.7643 - val_accuracy: 0.7606 - 964s/epoch - 96ms/step
+Epoch 3/50
+
+Epoch 3: val_accuracy improved from 0.76059 to 0.76926, saving model to ./models_aug/best_model.h5
+10090/10090 - 994s - loss: 0.6143 - accuracy: 0.7999 - val_loss: 0.7295 - val_accuracy: 0.7693 - 994s/epoch - 99ms/step
+Epoch 4/50
+
+Epoch 4: val_accuracy improved from 0.76926 to 0.77498, saving model to ./models_aug/best_model.h5
+10090/10090 - 968s - loss: 0.5437 - accuracy: 0.8183 - val_loss: 0.7144 - val_accuracy: 0.7750 - 968s/epoch - 96ms/step
+Epoch 5/50
+
+Epoch 5: val_accuracy improved from 0.77498 to 0.77778, saving model to ./models_aug/best_model.h5
+10090/10090 - 1014s - loss: 0.4925 - accuracy: 0.8322 - val_loss: 0.7186 - val_accuracy: 0.7778 - 1014s/epoch - 101ms/step
+Epoch 6/50
+
+Epoch 6: val_accuracy did not improve from 0.77778
+10090/10090 - 1006s - loss: 0.4528 - accuracy: 0.8434 - val_loss: 0.7290 - val_accuracy: 0.7777 - 1006s/epoch - 100ms/step
+Epoch 7/50
+
+Epoch 7: val_accuracy did not improve from 0.77778
+10090/10090 - 947s - loss: 0.4208 - accuracy: 0.8533 - val_loss: 0.7434 - val_accuracy: 0.7754 - 947s/epoch - 94ms/step
+Epoch 8/50
+
+Epoch 8: val_accuracy did not improve from 0.77778
+10090/10090 - 949s - loss: 0.3922 - accuracy: 0.8619 - val_loss: 0.7601 - val_accuracy: 0.7705 - 949s/epoch - 94ms/step
+The model has been trained.
+1052/1052 - 25s - 25s/epoch - 24ms/step
+Statistics computed. Program finished-----------------
+
+End time: 10:43:26
+
+Execution time: 02:11:07
+Data saved
+
+Top1 accuracy: 0    0.79276
+Name: 1, dtype: float64
+Top3 accuracy: 0    0.954498
+Name: 3, dtype: float64
+Top5 accuracy: 0    0.973549
+Name: 5, dtype: float64
+MER mean: 0    0.900051
+Name: MER, dtype: float64
+End of the script

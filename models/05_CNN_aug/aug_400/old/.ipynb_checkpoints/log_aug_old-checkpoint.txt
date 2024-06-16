@@ -1,0 +1,3 @@
+DESCRIPTION: CNN training, with data augmentation. 14 epochs, on all the dataset. Model: MNIST from the book "Hands on Machine Learning" (Géron).
+Start time: 21:38:15
+

@@ -1,0 +1,3 @@
+DESCRIPTION: CNN training, with data augmentation. Validation is used. Augmented dataset (600). Model: MNIST from the book "Hands on Machine Learning" (Géron).
+Start time: 10:05:22
+

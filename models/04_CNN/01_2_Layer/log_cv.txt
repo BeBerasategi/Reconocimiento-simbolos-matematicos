@@ -1,0 +1,279 @@
+DESCRIPTION: CNN training, with cross validation to obtain more robust statistics. Model: 2-LAYER. Artículo: "HASYv2 dataset".
+Start time: 10:23:50
+
+Fold 1 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107668, 32, 32, 32)      320       
+                                                                 
+ max_pooling2d (MaxPooling2D  (107668, 16, 16, 32)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107668, 8192)            0         
+                                                                 
+ dense (Dense)               (107668, 369)             3023217   
+                                                                 
+=================================================================
+Total params: 3,023,537
+Trainable params: 3,023,537
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/20
+
+Epoch 1: val_accuracy improved from -inf to 0.71855, saving model to ./models_cv/best_model_fold_1.h5
+2945/2945 - 171s - loss: 1.6340 - accuracy: 0.6333 - val_loss: 1.1361 - val_accuracy: 0.7186 - 171s/epoch - 58ms/step
+Epoch 2/20
+
+Epoch 2: val_accuracy improved from 0.71855 to 0.73200, saving model to ./models_cv/best_model_fold_1.h5
+2945/2945 - 173s - loss: 0.7544 - accuracy: 0.7935 - val_loss: 1.0581 - val_accuracy: 0.7320 - 173s/epoch - 59ms/step
+Epoch 3/20
+
+Epoch 3: val_accuracy improved from 0.73200 to 0.73705, saving model to ./models_cv/best_model_fold_1.h5
+2945/2945 - 192s - loss: 0.4475 - accuracy: 0.8673 - val_loss: 1.1366 - val_accuracy: 0.7371 - 192s/epoch - 65ms/step
+Epoch 4/20
+
+Epoch 4: val_accuracy did not improve from 0.73705
+2945/2945 - 193s - loss: 0.2543 - accuracy: 0.9199 - val_loss: 1.2499 - val_accuracy: 0.7281 - 193s/epoch - 65ms/step
+Epoch 5/20
+
+Epoch 5: val_accuracy did not improve from 0.73705
+2945/2945 - 192s - loss: 0.1542 - accuracy: 0.9493 - val_loss: 1.4152 - val_accuracy: 0.7223 - 192s/epoch - 65ms/step
+Epoch 6/20
+
+Epoch 6: val_accuracy did not improve from 0.73705
+2945/2945 - 198s - loss: 0.1049 - accuracy: 0.9642 - val_loss: 1.5417 - val_accuracy: 0.7307 - 198s/epoch - 67ms/step
+The model has been trained.
+Best epoch number:  2
+842/842 - 6s - 6s/epoch - 7ms/step
+Fold 1 TOP1 accuracy: 0.7410654580578052
+Fold 1 MER accuracy: 0.831042425143027
+
+Fold 2 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107669, 32, 32, 32)      320       
+                                                                 
+ max_pooling2d (MaxPooling2D  (107669, 16, 16, 32)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107669, 8192)            0         
+                                                                 
+ dense (Dense)               (107669, 369)             3023217   
+                                                                 
+=================================================================
+Total params: 3,023,537
+Trainable params: 3,023,537
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/20
+
+Epoch 1: val_accuracy improved from -inf to 0.71424, saving model to ./models_cv/best_model_fold_2.h5
+2945/2945 - 181s - loss: 1.6478 - accuracy: 0.6305 - val_loss: 1.1550 - val_accuracy: 0.7142 - 181s/epoch - 61ms/step
+Epoch 2/20
+
+Epoch 2: val_accuracy improved from 0.71424 to 0.73624, saving model to ./models_cv/best_model_fold_2.h5
+2945/2945 - 190s - loss: 0.7700 - accuracy: 0.7904 - val_loss: 1.0536 - val_accuracy: 0.7362 - 190s/epoch - 64ms/step
+Epoch 3/20
+
+Epoch 3: val_accuracy did not improve from 0.73624
+2945/2945 - 184s - loss: 0.4622 - accuracy: 0.8617 - val_loss: 1.1189 - val_accuracy: 0.7342 - 184s/epoch - 63ms/step
+Epoch 4/20
+
+Epoch 4: val_accuracy did not improve from 0.73624
+2945/2945 - 185s - loss: 0.2812 - accuracy: 0.9115 - val_loss: 1.2522 - val_accuracy: 0.7310 - 185s/epoch - 63ms/step
+Epoch 5/20
+
+Epoch 5: val_accuracy did not improve from 0.73624
+2945/2945 - 192s - loss: 0.1756 - accuracy: 0.9414 - val_loss: 1.4304 - val_accuracy: 0.7296 - 192s/epoch - 65ms/step
+The model has been trained.
+Best epoch number:  1
+842/842 - 5s - 5s/epoch - 6ms/step
+Fold 2 TOP1 accuracy: 0.7352230932124679
+Fold 2 MER accuracy: 0.8282498049559758
+
+Fold 3 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107669, 32, 32, 32)      320       
+                                                                 
+ max_pooling2d (MaxPooling2D  (107669, 16, 16, 32)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107669, 8192)            0         
+                                                                 
+ dense (Dense)               (107669, 369)             3023217   
+                                                                 
+=================================================================
+Total params: 3,023,537
+Trainable params: 3,023,537
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/20
+
+Epoch 1: val_accuracy improved from -inf to 0.71187, saving model to ./models_cv/best_model_fold_3.h5
+2945/2945 - 176s - loss: 1.6346 - accuracy: 0.6330 - val_loss: 1.1457 - val_accuracy: 0.7119 - 176s/epoch - 60ms/step
+Epoch 2/20
+
+Epoch 2: val_accuracy improved from 0.71187 to 0.73794, saving model to ./models_cv/best_model_fold_3.h5
+2945/2945 - 179s - loss: 0.7597 - accuracy: 0.7925 - val_loss: 1.0535 - val_accuracy: 0.7379 - 179s/epoch - 61ms/step
+Epoch 3/20
+
+Epoch 3: val_accuracy improved from 0.73794 to 0.73965, saving model to ./models_cv/best_model_fold_3.h5
+2945/2945 - 175s - loss: 0.4420 - accuracy: 0.8678 - val_loss: 1.1117 - val_accuracy: 0.7397 - 175s/epoch - 60ms/step
+Epoch 4/20
+
+Epoch 4: val_accuracy did not improve from 0.73965
+2945/2945 - 170s - loss: 0.2569 - accuracy: 0.9176 - val_loss: 1.2822 - val_accuracy: 0.7330 - 170s/epoch - 58ms/step
+Epoch 5/20
+
+Epoch 5: val_accuracy did not improve from 0.73965
+2945/2945 - 184s - loss: 0.1568 - accuracy: 0.9476 - val_loss: 1.4480 - val_accuracy: 0.7289 - 184s/epoch - 62ms/step
+Epoch 6/20
+
+Epoch 6: val_accuracy did not improve from 0.73965
+2945/2945 - 198s - loss: 0.1048 - accuracy: 0.9643 - val_loss: 1.6303 - val_accuracy: 0.7269 - 198s/epoch - 67ms/step
+The model has been trained.
+Best epoch number:  2
+842/842 - 6s - 6s/epoch - 7ms/step
+Fold 3 TOP1 accuracy: 0.7367834454062488
+Fold 3 MER accuracy: 0.826206486606977
+
+Fold 4 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107669, 32, 32, 32)      320       
+                                                                 
+ max_pooling2d (MaxPooling2D  (107669, 16, 16, 32)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107669, 8192)            0         
+                                                                 
+ dense (Dense)               (107669, 369)             3023217   
+                                                                 
+=================================================================
+Total params: 3,023,537
+Trainable params: 3,023,537
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/20
+
+Epoch 1: val_accuracy improved from -inf to 0.71885, saving model to ./models_cv/best_model_fold_4.h5
+2945/2945 - 175s - loss: 1.6741 - accuracy: 0.6265 - val_loss: 1.1436 - val_accuracy: 0.7188 - 175s/epoch - 59ms/step
+Epoch 2/20
+
+Epoch 2: val_accuracy improved from 0.71885 to 0.74359, saving model to ./models_cv/best_model_fold_4.h5
+2945/2945 - 185s - loss: 0.7735 - accuracy: 0.7894 - val_loss: 1.0259 - val_accuracy: 0.7436 - 185s/epoch - 63ms/step
+Epoch 3/20
+
+Epoch 3: val_accuracy did not improve from 0.74359
+2945/2945 - 186s - loss: 0.4649 - accuracy: 0.8627 - val_loss: 1.0947 - val_accuracy: 0.7426 - 186s/epoch - 63ms/step
+Epoch 4/20
+
+Epoch 4: val_accuracy did not improve from 0.74359
+2945/2945 - 178s - loss: 0.2749 - accuracy: 0.9135 - val_loss: 1.2466 - val_accuracy: 0.7388 - 178s/epoch - 61ms/step
+Epoch 5/20
+
+Epoch 5: val_accuracy did not improve from 0.74359
+2945/2945 - 186s - loss: 0.1702 - accuracy: 0.9439 - val_loss: 1.3902 - val_accuracy: 0.7335 - 186s/epoch - 63ms/step
+The model has been trained.
+Best epoch number:  1
+842/842 - 5s - 5s/epoch - 6ms/step
+Fold 4 TOP1 accuracy: 0.7397555448229743
+Fold 4 MER accuracy: 0.8301445183341383
+
+Fold 5 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107669, 32, 32, 32)      320       
+                                                                 
+ max_pooling2d (MaxPooling2D  (107669, 16, 16, 32)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107669, 8192)            0         
+                                                                 
+ dense (Dense)               (107669, 369)             3023217   
+                                                                 
+=================================================================
+Total params: 3,023,537
+Trainable params: 3,023,537
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/20
+
+Epoch 1: val_accuracy improved from -inf to 0.71484, saving model to ./models_cv/best_model_fold_5.h5
+2945/2945 - 178s - loss: 1.6553 - accuracy: 0.6291 - val_loss: 1.1620 - val_accuracy: 0.7148 - 178s/epoch - 61ms/step
+Epoch 2/20
+
+Epoch 2: val_accuracy improved from 0.71484 to 0.73193, saving model to ./models_cv/best_model_fold_5.h5
+2945/2945 - 189s - loss: 0.7509 - accuracy: 0.7949 - val_loss: 1.0330 - val_accuracy: 0.7319 - 189s/epoch - 64ms/step
+Epoch 3/20
+
+Epoch 3: val_accuracy did not improve from 0.73193
+2945/2945 - 320s - loss: 0.4441 - accuracy: 0.8678 - val_loss: 1.0954 - val_accuracy: 0.7293 - 320s/epoch - 109ms/step
+Epoch 4/20
+
+Epoch 4: val_accuracy did not improve from 0.73193
+2945/2945 - 453s - loss: 0.2647 - accuracy: 0.9165 - val_loss: 1.2347 - val_accuracy: 0.7276 - 453s/epoch - 154ms/step
+Epoch 5/20
+
+Epoch 5: val_accuracy did not improve from 0.73193
+2945/2945 - 512s - loss: 0.1650 - accuracy: 0.9461 - val_loss: 1.3935 - val_accuracy: 0.7258 - 512s/epoch - 174ms/step
+The model has been trained.
+Best epoch number:  1
+842/842 - 18s - 18s/epoch - 22ms/step
+Fold 5 TOP1 accuracy: 0.7347401270572501
+Fold 5 MER accuracy: 0.8284727124122302
+
+Cross validation finished-----------------
+
+End time: 12:02:41
+
+Execution time: 01:38:50
+Data saved
+
+Top1 accuracy mean: 0.7375135337113493
+Top1 accuracy std: 0.0027889833034978216
+Top3 accuracy mean: 0.9015202120688661
+Top3 accuracy std: 0.0008614519652040859
+Top5 accuracy mean: 0.9311443999078237
+Top5 accuracy std: 0.0009787837252759142
+MER mean: 0.8288231894904696
+MER std: 0.0018688000683552697
+Epoch mean: 1.4
+Epoch std: 0.5477225575051661
+End of the script

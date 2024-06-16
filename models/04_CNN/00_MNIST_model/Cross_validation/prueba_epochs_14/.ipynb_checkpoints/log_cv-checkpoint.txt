@@ -1,0 +1,36 @@
+DESCRIPTION: CNN training, with cross validation to obtain more robust statistics. Model: MNIST from the book "Hands on Machine Learning" (Géron).
+Start time: 21:30:00
+
+Fold 1 loaded----------------------------------------
+Converted y indexes to symbol IDs
+Converted y symbol IDs to same index system
+Data scaled
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (107668, 32, 32, 32)      320       
+                                                                 
+ conv2d_1 (Conv2D)           (107668, 32, 32, 64)      18496     
+                                                                 
+ max_pooling2d (MaxPooling2D  (107668, 16, 16, 64)     0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (107668, 16384)           0         
+                                                                 
+ dropout (Dropout)           (107668, 16384)           0         
+                                                                 
+ dense (Dense)               (107668, 128)             2097280   
+                                                                 
+ dropout_1 (Dropout)         (107668, 128)             0         
+                                                                 
+ dense_1 (Dense)             (107668, 369)             47601     
+                                                                 
+=================================================================
+Total params: 2,163,697
+Trainable params: 2,163,697
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/14
