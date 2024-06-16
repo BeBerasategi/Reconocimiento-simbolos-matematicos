@@ -1,0 +1,1 @@
+Ver https://github.com/MartinThoma/HASY para más información sobre esta base de datos. Los archivos `hasy-data.tar.gz` y `benat-data.tar.gz` se deben descomprimir para poder utilizar los datos en los scripts de este repositorio.
