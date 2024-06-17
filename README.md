@@ -8,6 +8,11 @@ Este repositorio complementa mi Trabajo de Fin de Grado, que ha consistido en en
   <img src="Databases/HASY/hasy-overview_1.png" width="800" />
 </p>
 
+## Acceso a la demo
+
+Se puede acceder a la demo haciendo click en en la imagen que dice **launch binder**. En este proceso se debe cargar todo el entorno para poder ejecutar la demo adecuadamente, por lo que no es rápido. **Puede tardar hasta 5 minutos**.
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/BeBerasategi/symbol_demo/HEAD?urlpath=voila%2Frender%2Fapp%2FDemo.ipynb)
+
 ## Uso
 
 El directorio `Databases` contiene las bases de datos con las que se han entrenado los modelos. En el directorio `HASY` se encuentran los archivos relativos a la base de datos original. `hasy_tools.py` contiene las funciones escritas por el autor de la base de datos HASY, que se han actualizado y modificado según los objetivos de este proyecto. Las versiones actualizadas están en el archivo `hasy_tools_updated.py`. En la segunda parte del trabajo ha sido necesario utilizar métodos de aumento de datos para obtener una base de datos en la que todas las clases tienen el mismo número de muestras. Todo lo relacionado con este proceso se puede encontrar en `Data Augmentation`.
